@@ -37,6 +37,12 @@
     <!-- Slider -->
     <link rel="stylesheet" href="vista/asset/css/slippry.css">
 
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
     <title>Blackparadox</title>
   </head>
 
@@ -119,15 +125,26 @@
     <h3 class="nosotros">Estos somos nosotros</h3>
 
     <div class="row">
+
       <div class="nosotros__a col-xl-6">
-        <img class="china efecto" src="vista/asset/images/square_01.jpg" alt="">
+        <img class="china efecto servicio-img" src="vista/asset/images/square_01.jpg" alt="">
       </div>
 
       <div class="nosotros__b col-xl-6">
-        <span class="black">Blackparadox </span><span class="black__b">va a tu evento</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed enim iure quae, cupiditate aperiam. Soluta consequatur distinctio deleniti adipisci at iusto voluptatem autem qui ab aliquid nostrum.</p>
-        <button class="boton boton__b">Contáctanos</button>
+        <div>
+          <span class="black">Blackparadox </span><span class="black__b">va a tu evento</span>
+        </div>
+        
+        <div class="nosotros__p">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed enim iure quae, cupiditate aperiam. Soluta consequatur distinctio deleniti adipisci at iusto voluptatem autem qui ab aliquid nostrum.</p>
+        </div>
+        
+        <div>
+          <button class="boton boton__b">Contáctanos</button>
+        </div>
+        
       </div>
+
     </div>
   </div>
 
@@ -142,7 +159,7 @@
     <div class="row">
 
       <div class="eventos col-xl-4">
-        <img class="perrito" src="vista/asset/images/square_03.jpg" alt="">
+        <img class="perrito efecto" src="vista/asset/images/square_03.jpg" alt="">
         <h4>Eventos</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed enim iure quae, cupiditate aperiam. Soluta consequatur distinctio deleniti adipisci at iusto voluptatem autem qui ab aliquid nostrum.
@@ -151,7 +168,7 @@
       </div>
 
       <div class="bodas col-xl-4">
-        <img class="mochilera" src="vista/asset/images/square_02.jpg" alt="">
+        <img class="mochilera efecto" src="vista/asset/images/square_02.jpg" alt="">
         <h4>Bodas</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed enim iure quae, cupiditate aperiam. Soluta consequatur distinctio deleniti adipisci at iusto voluptatem autem qui ab aliquid nostrum.
@@ -160,7 +177,7 @@
       </div>
 
       <div class="xv col-xl-4">
-        <img class="chica" src="vista/asset/images/square_10.jpg" alt="">
+        <img class="chica efecto" src="vista/asset/images/square_10.jpg" alt="">
         <h4>xv años</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed enim iure quae, cupiditate aperiam. Soluta consequatur distinctio deleniti adipisci at iusto voluptatem autem qui ab aliquid nostrum.
@@ -173,57 +190,124 @@
   </div>
   
 
-
   <!-- Footer -->
 
   <div class="container-fluid" id="footer">
     <div class="row">
-
-      <div class="col-xl-1"></div>
-
-      <div class="sitio col-xl-2 ">
-        <h6 class="mapa">Mapa del sitio</h6>
-
-        <ul class="mapa__p">
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Portafolio</li>
-          <li>Contácto</li>
+      <div class="footer__a col-xl-3">
+        <h6>Mapa del sitio</h6>
+        <ul class="li__general">
+          <li class="small">Inicio</li>
+          <li class="small">Nosotros</li>
+          <li class="small">Portafolio</li>
+          <li class="small">Contacto</li>
         </ul>
 
-        <hr class="linea">
+        <hr class="linea__sitio">
 
-        <ul class="mapa__p">
-          <li>Contrato</li>
-          <li>Servicios</li>
-          <li>Facturación</li>
-          <li>Términos y condiciones</li>
+        <ul class="li__general">
+          <li class="small">Contrato</li>
+          <li class="small">Servicios</li>
+          <li class="small">Facturación</li>
+          <li class="small">Términos y condiciones</li>
         </ul>
-
       </div>
 
-      <div class="tumblr col-xl-6">
-        <img src="" alt="">
+      <div class="footer__b col-xl 6">
+        <h6>Tumblr</h6>
+        <div class="row">
+
+          <div class="tmb1">
+            <img src="vista/asset/images/square_01.jpg" alt="imagen 01" class="tumblr">
+            <img src="vista/asset/images/square_02.jpg" alt="imagen 02" class="tumblr">
+            <img src="vista/asset/images/square_03.jpg" alt="imagen 03" class="tumblr">
+            <img src="vista/asset/images/square_04.jpg" alt="imagen 04" class="tumblr">
+            <img src="vista/asset/images/square_05.jpg" alt="imagen 05" class="tumblr">
+          </div>
+
+          <div class="tmb2">
+            <img src="vista/asset/images/square_06.jpg" alt="imagen 01" class="tumblr">
+            <img src="vista/asset/images/square_07.jpg" alt="imagen 02" class="tumblr">
+            <img src="vista/asset/images/square_08.jpg" alt="imagen 03" class="tumblr">
+            <img src="vista/asset/images/square_09.jpg" alt="imagen 04" class="tumblr">
+            <img src="vista/asset/images/square_10.jpg" alt="imagen 05" class="tumblr">
+          </div>
+        </div>
       </div>
 
-      <div class="contacto col-xl-2">
-        <h6 class="contact">Contácto</h6>
-        <ul class="mapa__p">
-          <li>+55 1234 5678</li>
-          <li>hellow@joystick.com.mx</li>
-          <li>John Doe / Fotógrafo</li>
-        </ul>
+      <div class="footer__c col-xl-3">
+        <div class="informacion">
+          <div id="contacto">
+            <h6>Contacto</h6>
+            <ul class="li__general">
+              <li class="small">+55 1234 5678</li>
+              <li class="small">hellow@joystick.com.mx</li>
+              <li class="small">John Doe / Fotógrafo</li>
+            </ul>
+          </div>
 
-        <div class="redes">
-          <h6>Redes Sociales</h6>
+        <div id="redes">
+          <h6>Redes sociales</h6>
+          <ul class="redes">
+            <li class="redes__icono"><i class="bi bi-facebook icono"></i></li>
+            <li class="redes__icono"><i class="bi bi-twitter icono"></i></li>
+            <li class="redes__icono"><i class="bi bi-youtube icono"></i></li>
+          </ul>
         </div>
 
-      </div>
 
-      <div class="col-xl-1"></div>
+        </div> 
+      </div> 
+
+      <div class="footer__d col-xl-12">
+        <hr class="linea__copy">
+        <p class="small copy__p">
+          &copy; 2017 todos los derechos reservados por <a class="bp" href="#">Blackparadox</a>
+        </p>
+      </div>
 
     </div>
   </div>
+
+  <!-- Footer -->
+
+  <!-- 
+ 
+////////////////
+  CONTACTO
+////////////////
+
+  #contacto
+    margin-top: 2rem
+    color: $sec 
+    font-weight: bold
+    .contacto
+      margin-left: 2rem
+
+/////////////
+  REDES
+/////////////
+  
+  #copy
+    margin-top: 5rem
+    margin-bottom: 1rem
+    .copy__linea 
+      width: 100%
+      height: .1rem
+      border-radius: 10px
+      background-color: transparentize(white, .6)
+    .copy
+      color: transparentize(white, .6)
+    .copy__a
+      color: white
+      opacity: .6
+      text-decoration: none
+      @extend.tSlow
+      &:hover
+        opacity: 1
+        text-decoration: none
+        font-size: 18pX
+  -->
 
 
     <!-- JavaScript Bundle with Popper -->
@@ -239,8 +323,8 @@
         $("#slippry").slippry({
           captions:false, //Este sirve para quitar los "comentarios" como el de este es un slider.
           pager:false //Este sirve para quitar las bolitas (dots en carousel).
+        });  
 
-        });
       });
     </script>
 

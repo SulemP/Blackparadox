@@ -9,8 +9,7 @@ a
 	padding: 0px
 	@extend.tSlow 
 	color: $base
-	&:hover
-		color: $outline
+	text-decoration: none
 		
 
 h1,h2,h3,h4,h5,h6
@@ -18,6 +17,10 @@ h1,h2,h3,h4,h5,h6
 
 p 
 	color: $sec
+
+li 
+	list-style: none
+
 
 .tSlow
 	-webkit-transition: all .5s ease-in-out
@@ -31,9 +34,9 @@ p
 	text-align: center
 	margin: 0px auto
 
-/////////////////////////
-		CABEZOTE
-/////////////////////////
+/////////////////////////////////////////////////
+					CABEZOTE
+/////////////////////////////////////////////////
 
 #cabezote 
 	width: 100%
@@ -113,9 +116,9 @@ p
 					width: 100%
 					background-color: $base
 
-///////////////////////
-		SLIDER
-///////////////////////
+///////////////////////////////////////////////
+					SLIDER
+///////////////////////////////////////////////
 #slider
 	position: relative
 	backface-visibility: hidden
@@ -183,22 +186,20 @@ p
 		text-align: justify
 
 	
-/////////////////////////
-		NOSOTROS
-////////////////////////
+///////////////////////////////////////////////
+					NOSOTROS
+//////////////////////////////////////////////
 		
 #nosotros
 	position: relative
 	font-size: 16px
-	margin-top: 2rem
+	margin-top: 1rem
 
 .nosotros
 	text-align: center
-	margin-bottom: 10rem
+	margin-bottom: 6rem
 
 .efecto
-	width: 250px
-	height: 250px
 	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
 	-o-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
@@ -206,21 +207,29 @@ p
 	&:hover
 		clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)
 		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)
-	-o-clip-path:polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)
+		-o-clip-path:polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)
+		border-radius: 100%
 
-
-.black
-	font-weight: bold
-	font-size: 24px
-
-.black__b
-	font-size: 24px
 
 .china
 	width: 100%
-	height: 100%
+	height: 90%
 	object-fit: cover
 
+.nosotros__b
+	padding: 200px 20px
+
+	.black
+
+		font-weight: bold
+		font-size: 24px
+
+	.black__b
+		font-size: 24px
+		margin-top: 1rem
+
+	.nosotros__p
+		margin-top: 1rem
 
 ///////////////////////////
 		CAPTURAMOS
@@ -260,58 +269,108 @@ p
 		margin-bottom: 2rem
 
 
-///////////////////////
-		FOOTER
-///////////////////////
+////////////////////////////////////////
+				FOOTER
+///////////////////////////////////////
 
 #footer
 	position: relative
 	font-size: 16px
-	margin-top: 5rem
-	height: 400px
-	background-color:$base
+	margin-top: 8rem
+	background-color: $base
 	backface-visibility: hidden
-	-webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+	-webkit-clip-path:polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
 	-o-clip-path:polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
 	clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
-
-
-.mapa__p
-		padding:0%
-		font-size: 80%
-		font-weight: 400
-		list-style: none
-		color: rgba(255, 255, 255, .2)
-
-.sitio 
-	.mapa
-		color: $sec 
-		margin-top: 4rem
-		font-weight: bold
-
-	.linea 
-		height: .1rem
-		width: 80%
-
-.contact
-	color: $sec 
-	margin-top: 4rem
-	font-weight: bold
-
-.redes
-	margin-top: 2rem
 	h6 
-		color: $sec
-		font-weight: bold
+		color: transparentize(white, .4)
+
+	.li__general
+		padding: 0%
+		color: transparentize(white, .6)
+
+	.footer__a
+		margin-top: 4rem
+		margin-left: 2rem
+		.linea__sitio
+			height: .1rem
+			width: 80%
+			color: transparentize(white, .7)
+
+	.footer__b
+		margin-top: 4rem
+		padding: 0%
+		cursor: pointer
+		.tmb2
+			margin-top: .2rem
+		.tumblr
+			width: 19%
+			opacity: .6
+			&:hover
+				opacity:1 
+				@extend.tSlow
+
+	.footer__c
+		margin-top: 4rem
+		.informacion
+			margin-left: 2rem
+		#redes
+			margin-top: 2rem
+			.redes
+				padding: 0%
+				.redes__icono
+					display: inline-block
+					margin: 0px 7px
+					position: relative
+					float: left
+					width: 30px
+					height: 30px
+					text-align: center
+					-webkit-transform: rotate(0deg)
+					-ms-transform: rotate(0deg)
+					-o-transform: rotate(0deg)
+					transform: rotate(0deg)
+					backface-visibility: hidden
+					cursor: pointer
+					@extend.tSlow
+					&:hover
+						-webkit-transform: rotate(45deg)
+						-ms-transform: rotate(45deg) 
+						-o-transform: rotate(45deg) 
+						transform: rotate(45deg) 
+						background-color: white 
+						backface-visibility: hidden
+					.icono 
+						font-size: 22px
+						color: transparentize(white, .8)
+						-webkit-transform: ratate(0deg) translate(-3px, 3px)
+						-ms-transform: ratate(0deg) translate(-3px, 3px)
+						-o-transform: ratate(0deg) translate(-3px, 3px) 
+						transform: ratate(0deg) translate(-3px, 3px)
+						backface-visibility: hidden
+						@extend.tSlow
+						&:hover 
+							color: $base
+							-webkit-transform: rotate(-45deg)translate(-3px,3px) 
+							-ms-transform: rotate(-45deg)translate(-3px,3px)
+							-o-transform: rotate(-45deg)translate(-3px,3px) 
+							transform: rotate(-45deg)translate(-3px,3px) 
+
+
+
+
+	.footer__d
+		margin-top: 2rem
+		padding: 0%
+		.linea__copy
+			color: white
+		.copy__p
+			margin-left: 2rem
+			.bp
+				color: transparentize(white, .6)
+				font-size: 14px
+				&:hover
+					color: white
+					font-size: 16px
+
 	
-	
-
-
-
-
-
-
-
-
-
-
